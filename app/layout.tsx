@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/providers/themeProvider";
 import { ModalProvider } from "@/components/providers/modalProvider";
 import { cn } from "@/lib/utils";
+import { SocketProvider } from "@/components/providers/socketProvider";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -38,8 +39,10 @@ export default function RootLayout({
             enableSystem
             storageKey="distalk-theme"
           >
-            <ModalProvider />
-            {children}
+            <SocketProvider>
+              <ModalProvider />
+              {children}
+            </SocketProvider>
           </ThemeProvider>
         </body>
       </html>
