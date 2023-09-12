@@ -21,6 +21,16 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
+        <head>
+          <meta name="author" content="KMaar" />
+          <link rel="author" href="https://kmaar.vercel.app/" />
+          <meta name="theme-color" content="#6366f1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="creator" content="KMaar Miscellaneous Studio" />
+          <meta name="robots" content="index, follow" />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        </head>
         <body className={cn(openSans.className, "bg-white dark:bg-[#313338]")}>
           <ThemeProvider
             attribute="class"
