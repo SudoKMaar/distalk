@@ -18,14 +18,38 @@ export const FileUpload = ({ onChange, value, endpoint }: FileUploadProps) => {
     (value && fileType === "jpeg") ||
     (value && fileType === "gif") ||
     (value && fileType === "webp") ||
-    (value && fileType === "svg")
+    (value && fileType === "aces") ||
+    (value && fileType === "avif") ||
+    (value && fileType === "bmp") ||
+    (value && fileType === "cgm") ||
+    (value && fileType === "dicom-rle") ||
+    (value && fileType === "emf") ||
+    (value && fileType === "fits") ||
+    (value && fileType === "g3fax") ||
+    (value && fileType === "heic") ||
+    (value && fileType === "heif") ||
+    (value && fileType === "ief") ||
+    (value && fileType === "jls") ||
+    (value && fileType === "jp2") ||
+    (value && fileType === "jph") ||
+    (value && fileType === "jphc") ||
+    (value && fileType === "jpm") ||
+    (value && fileType === "jpx") ||
+    (value && fileType === "ktx") ||
+    (value && fileType === "ktx2") ||
+    (value && fileType === "sgi") ||
+    (value && fileType === "ico") ||
+    (value && fileType === "svg+xml") ||
+    (value && fileType === "t38") ||
+    (value && fileType === "svg") ||
+    (value && fileType === "tiff")
   ) {
     return (
       <div className="relative h-20 w-20">
-        <Image fill src={value} alt="Upload" className="rounded-full" />
+        <Image fill src={value} alt="Upload" className="rounded-md" />
         <button
           onClick={() => onChange("")}
-          className="bg-rose-500 text-white p-1 rounded-2xl absolute top-0 right-0 shadow-sm"
+          className="bg-rose-500 text-white p-1 rounded-full absolute top-0 right-0 shadow-sm"
           type="button"
         >
           <X className="h-4 w-4" />
@@ -41,7 +65,31 @@ export const FileUpload = ({ onChange, value, endpoint }: FileUploadProps) => {
     fileType !== "jpeg" &&
     fileType !== "gif" &&
     fileType !== "webp" &&
-    fileType !== "svg"
+    fileType !== "aces" &&
+    fileType !== "avif" &&
+    fileType !== "bmp" &&
+    fileType !== "cgm" &&
+    fileType !== "dicom-rle" &&
+    fileType !== "emf" &&
+    fileType !== "fits" &&
+    fileType !== "g3fax" &&
+    fileType !== "heic" &&
+    fileType !== "heif" &&
+    fileType !== "ief" &&
+    fileType !== "jls" &&
+    fileType !== "jp2" &&
+    fileType !== "jph" &&
+    fileType !== "jphc" &&
+    fileType !== "jpm" &&
+    fileType !== "jpx" &&
+    fileType !== "ktx" &&
+    fileType !== "ktx2" &&
+    fileType !== "sgi" &&
+    fileType !== "ico" &&
+    fileType !== "svg+xml" &&
+    fileType !== "t38" &&
+    fileType !== "svg" &&
+    fileType !== "tiff"
   ) {
     return (
       <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
