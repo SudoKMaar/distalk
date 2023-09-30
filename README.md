@@ -84,7 +84,7 @@ Follow these steps to set up Distalk locally:
 1. **Clone the Repository**:
 
    ```shell
-   git clone https://github.com/distalk/distalk.git
+   git clone https://github.com/SudoKMaar/distalk.git
    ```
 
 2. **Navigate to the Project Directory**:
